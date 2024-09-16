@@ -13,7 +13,9 @@ export default function Home() {
 
     <AppBar position="static">
       <Toolbar>
-        <Typography variant="h6">Flashcard SaaS</Typography>
+        <Typography variant="h6" style={{ flexGrow: 1 }}>
+          Flashcard SaaS
+        </Typography>
         <SignedOut>
           <Button>Login</Button>
           <Button>Signup</Button>
