@@ -5,7 +5,7 @@ import { AppBar, Button, Container, Toolbar, Typography } from "@mui/material";
 import Head from "next/head";
 
 export default function Home() {
-  <Container maxWidth="lg">
+  <Container maxWidth="100vw">
     <Head>
       <title>Flashcard SaaS</title>
       <meta name="description" content="Create flashcards from your text" />
@@ -17,8 +17,12 @@ export default function Home() {
           Flashcard SaaS
         </Typography>
         <SignedOut>
-          <Button color="inherit">Login</Button>
-          <Button color="inherit">Signup</Button>
+          <Button color="inherit" href="/sign-in">
+            Login
+          </Button>
+          <Button color="inherit" href="/sign-up">
+            Signup
+          </Button>
         </SignedOut>
         <SignedIn>
           <UserButton />
@@ -89,7 +93,7 @@ export default function Home() {
         Pricing
       </Typography>
       <Grid container spacing={4} justifyContent="center">
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} md={6}>
           <Box
             sx={{
               p: 3,
@@ -114,7 +118,7 @@ export default function Home() {
           </Box>
         </Grid>
 
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} md={6}>
           <Box
             sx={{
               p: 3,
